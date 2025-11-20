@@ -1,0 +1,55 @@
+ext{
+    // -- packages versions --
+    versions = [
+            springBoot      : '3.2.3',
+            springCloud     : '2023.0.0',
+            lombok          : '1.18.30',
+            mapstruct       : '1.5.5.Final',
+            postgresql      : '42.7.1',
+            mongo           : '4.11.1',
+            jwt             : '0.11.5',
+            springDoc       : '2.3.0',
+            micrometer      : '1.12.3'
+    ]
+    // --- implementation packages ---
+    libs=[
+            bootWeb             : "org.springframework.boot:spring-boot-starter-web",
+            bootValidation      : "org.springframework.boot:spring-boot-starter-validation",
+            bootActuator        : "org.springframework.boot:spring-boot-starter-actuator",
+
+            cloudConfigServer   : "org.springframework.cloud:spring-cloud-config-server",
+            cloudConfigClient   : "org.springframework.cloud:spring-cloud-starter-config",
+            cloudEurekaServer   : "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+            cloudEurekaClient   : "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+            cloudGateway        : "org.springframework.cloud:spring-cloud-starter-gateway",
+            cloudFeign          : "org.springframework.cloud:spring-cloud-starter-openfeign",
+            cloudCircuitBreaker : "org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j",
+
+
+            dataJpa             : "org.springframework.boot:spring-boot-starter-data-jpa",
+            dataMongo           : "org.springframework.boot:spring-boot-starter-data-mongodb",
+            postgresDriver      : "org.postgresql:postgresql:${versions.postgresql}",
+
+
+            security            : "org.springframework.boot:spring-boot-starter-security",
+            jwtApi              : "io.jsonwebtoken:jjwt-api:${versions.jwt}",
+            jwtImpl             : "io.jsonwebtoken:jjwt-impl:${versions.jwt}",
+            jwtJackson          : "io.jsonwebtoken:jjwt-jackson:${versions.jwt}",
+
+
+            amqp                : "org.springframework.boot:spring-boot-starter-amqp",
+
+
+            tracingBrave        : "io.micrometer:micrometer-tracing-bridge-brave",
+            zipkinReporter      : "io.zipkin.reporter2:zipkin-reporter-brave",
+
+
+            lombok              : "org.projectlombok:lombok:${versions.lombok}",
+            mapstruct           : "org.mapstruct:mapstruct:${versions.mapstruct}",
+            mapstructProcessor  : "org.mapstruct:mapstruct-processor:${versions.mapstruct}",
+            openApi             : "org.springdoc:springdoc-openapi-starter-webmvc-ui:${versions.springDoc}",
+
+
+            bootTest            : "org.springframework.boot:spring-boot-starter-test"
+    ]
+}
