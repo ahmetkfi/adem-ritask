@@ -1,0 +1,25 @@
+plugins {
+
+}
+
+dependencies {
+
+    implementation libs.bootWeb
+    implementation libs.bootValidation
+
+
+    implementation libs.dataJpa
+    runtimeOnly libs.postgresDriver
+
+
+    implementation libs.security
+    implementation libs.jwtApi
+    runtimeOnly libs.jwtImpl
+    runtimeOnly libs.jwtJackson
+
+    implementation libs.cloudEurekaClient
+    implementation libs.cloudConfigClient
+
+
+    implementation libs.bootActuator
+}
