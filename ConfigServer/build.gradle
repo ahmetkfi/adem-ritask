@@ -1,0 +1,9 @@
+plugins{
+
+}
+dependencies {
+
+    implementation libs.cloudConfigServer
+
+    implementation libs.bootActuator
+}

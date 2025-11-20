@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ahmetkfi/adem-ritask-config-server
+          default-label: main
+          username: ahmetkfi
+          password: ${GIT_KEY}
+          fail-fast: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
