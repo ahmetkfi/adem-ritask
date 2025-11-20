@@ -1,2 +1,3 @@
 rootProject.name = 'RiTask'
 include 'ConfigServer'
+include 'DiscoveryServer'

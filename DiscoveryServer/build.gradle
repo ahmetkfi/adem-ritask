@@ -1,0 +1,9 @@
+plugins {
+    // Root'tan miras alınanlar yeterli
+}
+
+dependencies {
+    implementation libs.cloudEurekaServer
+    implementation libs.cloudConfigClient
+    implementation libs.bootActuator
+}
