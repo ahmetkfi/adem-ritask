@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ConfigServer" />
             <option value="$PROJECT_DIR$/DiscoveryServer" />
+            <option value="$PROJECT_DIR$/GatewayServer" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,0 +1,10 @@
+plugins {
+    // Root'tan miras
+}
+
+dependencies {
+    implementation libs.cloudGateway
+    implementation libs.cloudEurekaClient
+    implementation libs.cloudConfigClient
+    implementation libs.bootActuator
+}
