@@ -1,0 +1,18 @@
+plugins {
+    // Root'tan miras
+}
+
+dependencies {
+    implementation libs.bootWeb
+    implementation libs.bootValidation
+    implementation libs.dataJpa
+    runtimeOnly libs.postgresDriver
+
+    implementation libs.cloudEurekaClient
+    implementation libs.cloudConfigClient
+
+
+    implementation libs.bootActuator
+    compileOnly libs.lombok
+    annotationProcessor libs.lombok
+}
